@@ -73,7 +73,7 @@ int main() {
                     scannig_rectangles.push_back(rectangle_list[unread_rectangle_list_head]);
                     scan_line[(i+2)%3][rectangle_list[unread_rectangle_list_head]->y_bottom]++;
                     scan_line[(i+2)%3][rectangle_list[unread_rectangle_list_head]->y_top]--;
-					unread_rectangle_list_head++;
+                    unread_rectangle_list_head++;
                 } else if (rectangle_list[unread_rectangle_list_head]->x_left > (i+1)) {
                     break;
                 }
@@ -84,8 +84,8 @@ int main() {
                     scan_line[(i+2)%3][(*itr)->y_top]++;
                     itr = scannig_rectangles.erase(itr);
                 } else {
-					itr++;
-				}
+                    itr++;
+                }
             }
             number_buffer = 0;
             if (r == 2) {
